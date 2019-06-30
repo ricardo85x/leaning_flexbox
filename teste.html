@@ -1,0 +1,556 @@
+<html>
+
+<head>
+    <title>FLEX Content</title>
+</head>
+
+<style>
+
+     /* codigo base   */
+    .titulo {
+        font-size: 30px;
+        color: burlywood;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .header {
+        font-size: 40px;
+        color: chocolate;
+        font-weight: bold;
+        font-family: sans-serif
+    }
+
+    .base_container {
+        padding: 20;
+    }
+
+    /* Inicio Flex WRAP  */
+    .main-container .flex_container .flex_wrap .container {
+        border: 4px solid #61585E;
+        margin-bottom: 10px;
+
+    }
+
+    .main-container .flex_container .flex_wrap .container > * {
+        background-color: #EA3556;
+        padding: 5px;
+        color: white;
+        width: 80px;
+        height: 60px;
+    }
+    .main-container .flex_container .flex_wrap .container > *:nth-child(even) {
+        background-color: #49AEC0;
+    }
+
+
+
+    .main-container .flex_container .flex_wrap .container {
+        display: flex;
+    }
+
+    .main-container .flex_container .flex_wrap .container.one {
+        flex-wrap: nowrap;
+    }
+
+    .main-container .flex_container .flex_wrap .container.two {
+        flex-wrap: wrap;
+    }
+
+    .main-container .flex_container .flex_wrap .container.three {
+        flex-wrap: wrap-reverse;
+    }
+
+    /* FIM FLEX WRAP */
+
+    
+
+    /* DISPLAY CONTENT */
+
+    .main-container .flex_container .justify_content .container {
+        border: 4px solid #61585E;
+        margin-bottom: 10px;
+
+    }
+
+    .main-container .flex_container .justify_content .container > * {
+        background-color: #EA3556;
+        padding: 5px;
+        color: white;
+        width: 150px;
+        height: 60px;
+    }
+    .main-container .flex_container .justify_content .container > *:nth-child(even) {
+        background-color: #49AEC0;
+    }
+
+
+    .main-container .flex_container .justify_content .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-container .flex_container .justify_content .container.one{
+        justify-content: flex-start;
+    }
+    .main-container .flex_container .justify_content .container.two{
+        justify-content: flex-end;
+    }
+    .main-container .flex_container .justify_content .container.three{
+        justify-content: center;
+    }
+    .main-container .flex_container .justify_content .container.four{
+        justify-content: space-between;
+    }
+    .main-container .flex_container .justify_content .container.five{
+        justify-content: space-around;
+    }
+
+    /* FIM DISPLAY CONTENT */
+
+    /*  FLEX DIRECTION */
+
+
+
+    .main-container .flex_container .flex_direction .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-container .flex_container .flex_direction .one{
+        flex-direction: row;
+    }
+    .main-container .flex_container .flex_direction .two{
+        flex-direction: row-reverse;
+    }
+    .main-container .flex_container .flex_direction .three{
+        flex-direction: column;
+    }
+    .main-container .flex_container .flex_direction .four{
+        flex-direction: column-reverse;
+    }
+
+
+    /* basic styling */
+    .main-container .flex_container .flex_direction .container{
+        border: 4px solid #61585E;
+        margin-bottom: 10px;
+    }
+    .main-container .flex_container .flex_direction .container > *{
+        background-color: #EA3556;
+        padding: 5px;
+        color: white;
+        width: 100px;
+        height: 60px;
+    }
+    .main-container .flex_container .flex_direction .container > *:nth-child(even){
+        background-color: #49AEC0;
+    }
+
+    /*  END FLEX DIRECTION */
+
+
+    /*  ALIGN ITEMS */
+
+    
+    .main-container .flex_container .align_items .container{
+        display: flex;
+        min-height: 100px;
+    }
+    .main-container .flex_container .align_items .one{
+        align-items: stretch;
+    }
+    .main-container .flex_container .align_items .two{
+        align-items: flex-start;
+    }
+    .main-container .flex_container .align_items .three{
+        align-items: flex-end;
+    }
+
+    .main-container .flex_container .align_items .four{
+        align-items: center;
+    }
+
+    .main-container .flex_container .align_items .five{
+        align-items: baseline;
+    }
+
+    /*basic styling*/
+    .main-container .flex_container .align_items .container{
+        border: 4px solid #61585E;
+        margin-bottom: 10px;
+    }
+    .main-container .flex_container .align_items .container > *{
+        background-color: #EA3556;
+        padding: 5px;
+        color: white;
+        width: 100px;
+    }
+    .main-container .flex_container .align_items .container > *:nth-child(even){
+        background-color: #49AEC0;
+    }
+
+
+    /*  END ALIGN ITEMS */
+
+    /*  ALIGN CONTENT */
+
+
+    
+    .main-container .flex_container .align_content .container{
+        display: flex;
+        height: 100px;
+        flex-wrap: wrap;
+    }
+    .main-container .flex_container .align_content .one{
+        align-content: stretch;
+    }
+    .main-container .flex_container .align_content .two{
+        align-content: flex-start;
+    }
+    .main-container .flex_container .align_content .three{
+        align-content: flex-end;
+    }
+
+    .main-container .flex_container .align_content .four{
+        align-content: center
+    }
+
+    .main-container .flex_container .align_content .five{
+        align-content: space-between
+    }
+
+    .main-container .flex_container .align_content .six{
+        align-content: space-around;
+    }
+
+    /*basic styling*/
+    .main-container .flex_container .align_content .container {
+        border: 4px solid #61585E;
+        margin-bottom: 10px;
+    }
+    /*all flex items*/
+    .main-container .flex_container .align_content .container > *{
+        background-color: #EA3556;
+        padding: 5px;
+        color: white;
+        width: 100px;
+    }
+    .main-container .flex_container .align_content .container > *:nth-child(even){
+        background-color: #49AEC0;
+    }
+
+    /*  END ALIGN CONTENT */
+
+
+    /* FIM FLEX CONTAINER */
+    /* FLEX ITEMS */
+
+    /*ORDER */
+
+
+    
+
+    .main-container .flex_items .order .container{
+        display: flex;
+    }
+    .main-container .flex_items .order .one{
+        order: 8;
+    }
+    .main-container .flex_items .order .two{
+        order: -1;
+    }
+    .main-container .flex_items .order .three{
+        order: 0;
+    }
+    .main-container .flex_items .order .four{
+        order: -2;
+    }
+    .main-container .flex_items .order .five{
+        order: 6;
+    }
+
+
+    /*basic styling*/
+    .main-container .flex_items .order .container{
+        border: 4px solid #61585E;
+        margin-bottom: 10px;
+        height: 100px;
+    }
+    .main-container .flex_items .order .container > *{
+        background-color: #EA3556;
+        padding: 5px;
+        color: white;
+        width: 100px;
+    }
+    .main-container .flex_items .order .container > *:nth-child(even){
+        background-color: #49AEC0;
+    }
+
+    /* END ORDER */
+
+
+
+</style>
+
+<body>
+
+    <div class="main-container">
+        <div class="flex_container">
+
+            <span class="titulo header"> Flex Containers</span>
+
+            <div class="flex_wrap">
+
+                    <span class="titulo"> Flex Wrap</span>
+        
+                    <div class="base_container"> 
+                        <div class="container one">
+                            <div>nowrap</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>4</div>
+                            <div>5</div>
+                            <div>6</div>
+                            <div>7</div>
+                            <div>8</div>
+                            <div>9</div>
+                        </div>
+                        <div class="container two">
+                            <div>wrap</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>4</div>
+                            <div>5</div>
+                            <div>6</div>
+                            <div>7</div>
+                            <div>8</div>
+                        </div>
+
+                        <div class="container three">
+                            <div>wrap-reverse</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>4</div>
+                            <div>5</div>
+                            <div>6</div>
+                            <div>7</div>
+                            <div>8</div>
+                        </div>
+                    </div>
+        
+                </div>
+        
+        
+        
+                <div class="justify_content">
+        
+                        <span class="titulo"> Display Content</span>
+
+                        <div class="base_container"> 
+                            <div class="container one">
+                                <div>flex-start</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                            </div>
+                            <div class="container two">
+                                <div>flex-end</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                            </div>
+                            <div class="container three">
+                                <div>center</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                            </div>
+                            <div class="container four">
+                                <div>space-between</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                            </div>
+                            <div class="container five">
+                                <div>space-around</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                            </div>
+
+                        </div>
+
+            
+                </div>
+
+
+                <div class="flex_direction">
+        
+                    <span class="titulo"> Flex Direction</span>
+                    <div class="base_container"> 
+                        <div class="container one">
+                            <div>row</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>4</div>
+                            <div>5</div>
+                        </div>
+                        <div class="container two">
+                            <div>row-reverse</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>4</div>
+                            <div>5</div>
+                        </div>
+                        <div class="container three">
+                            <div>column</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>4</div>
+                            <div>5</div>
+                            </div>
+                        <div class="container four">
+                            <div>column-reverse</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>4</div>
+                            <div>5</div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="align_items">
+        
+                    <span class="titulo"> Align Items</span>
+                    <div class="base_container"> 
+
+                        <div class="container one">
+                            <div>stretch<br>-<br>-</div>
+                            <div>2<br>-<br>-<br>-</div>
+                            <div><h2>3</h1></div>
+                            <div>4<br>-</div>
+                        </div>
+                        <div class="container two">
+                            <div>flex-start<br>-<br>-</div>
+                            <div>2<br>-<br>-<br>-</div>
+                            <div><h2>3</h1></div>
+                            <div>4<br>-</div>
+                        </div>
+                        <div class="container three">
+                            <div>flex-end<br>-<br>-</div>
+                            <div>2<br>-<br>-<br>-</div>
+                            <div><h2>3</h1></div>
+                            <div>4<br>-</div>
+                        </div>
+                        <div class="container four">
+                            <div>center<br>-<br>-</div>
+                            <div>2<br>-<br>-<br>-</div>
+                            <div><h2>3</h1></div>
+                            <div>4<br>-</div>
+                        </div>
+                        <div class="container five">
+                            <div>baseline<br>-<br>-</div>
+                            <div>2<br>-<br>-<br>-</div>
+                            <div><h2>3</h2></div>
+                            <div>4<br>-</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="align_content">
+        
+                    <span class="titulo"> Align Content</span>
+                    <div class="base_container"> 
+                        
+
+                            <div class="container one">
+                                <div>stretch</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                                <div>5</div>
+                            </div>
+                            <div class="container two">
+                                <div>flex-start</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                                <div>5</div>
+                            </div>
+                            <div class="container three">
+                                <div>flex-end</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                                <div>5</div>
+                            </div>
+                            <div class="container four">
+                                <div>center</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                                <div>5</div>
+                            </div>
+                            <div class="container five">
+                                <div>space-between</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                                <div>5</div>
+                            </div>
+                            <div class="container six">
+                                <div>space-around</div>
+                                <div>2</div>
+                                <div>3</div>
+                                <div>4</div>
+                                <div>5</div>
+                            </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+       
+        <div class="flex_items">
+
+                <span class="titulo header"> Flex Items</span>
+    
+                <div class="order">
+    
+                        <span class="titulo"> order </span>
+            
+                        <div class="base_container"> 
+
+                                <div class="container">
+                                    <div class="one">1(-8)</div>
+                                    <div class="two">2(-1)</div>
+                                    <div class="three">3(0)</div>
+                                    <div class="four">4(-2)</div>
+                                    <div class="five">5(6)</div>
+                                </div>
+                        </div>
+
+                </div>
+        </div>        
+
+    </div>
+
+
+</body>
+
+</html>
+
